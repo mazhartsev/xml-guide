@@ -204,7 +204,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'xml-guide.tex', u'Windows registry guide Documentation',
+  ('index', 'xml-guide.tex', u'Краткое руководство по XML',
    u'Dmitry', 'manual'),
 ]
 
@@ -275,7 +275,7 @@ epub_publisher = u'Dmitry Mazhartsev'
 epub_copyright = u'2015, Dmitry Mazhartsev'
 
 # The basename for the epub file. It defaults to the project name.
-#epub_basename = u'Windows registry guide'
+#epub_basename = u'Краткое руководство по XML'
 
 # The HTML theme for the epub output. Since the default themes are not optimized
 # for small screen space, using the same theme for HTML and epub output is
