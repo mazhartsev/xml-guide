@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>IV. Скрипт для замены служебных символов в XML &mdash; Документация Краткое руководство по XML 1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Документация Краткое руководство по XML 1" href="index.html"/>
+        <link rel="next" title="Список используемых источников" href="bibliography.html"/>
+        <link rel="prev" title="III. Практические примеры" href="xml-experience.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Краткое руководство по XML
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="preface.html#id2">Авторские права</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preface.html#id3">Обратная связь</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-intro.html">I. Коротко об XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id1">Введение в XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id2">Структура XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id3">Правила синтаксиса (Валидность)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#essence">Сущности</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#xml-xpath">Поиск информации в XML файлах (XPath)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id5">Кодировки</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">II. Инструменты для работы с XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#tester">Tester</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#xmlpad">XMLPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#uvfilescorrector">UVFilesCorrector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#xpath-tester">Xpath-Tester</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#notepad">Notepad++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#geany">Geany</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-experience.html">III. Практические примеры</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-experience.html#xml">Исправление невалидных XML-файлов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-experience.html#id1">Удаление лишних блоков(абзацев) из XML по заданному условию</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xml-experience.html#id2">Суть проблемы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml-experience.html#id3">Решение проблемы</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">IV. Скрипт для замены служебных символов в XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#index-0">Описание</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Системные требования</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Авторские права</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Порядок работы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Выводимая информация</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Рекомендации</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">Проверка изменений в файлах</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">Программное обеспечение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">Приложение</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Список используемых источников</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programs.html">Программное обеспечение</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Краткое руководство по XML</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>IV. Скрипт для замены служебных символов в XML</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/xml-healer.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="iv-xml">
+<span id="xml-healer"></span><h1>IV. Скрипт для замены служебных символов в XML<a class="headerlink" href="#iv-xml" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="index-0">
+<span id="id1"></span><h2>Описание<a class="headerlink" href="#index-0" title="Ссылка на этот заголовок">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">xml_healer.py</span></code> (<em>англ.</em> healer — целитель) — скрипт для массового исправления невалидных XML файлов.</p>
+<p>Скрипт выполняет следующие замены:</p>
+<ul class="simple">
+<li>Символ <code class="docutils literal"><span class="pre">&amp;</span></code> заменяется на <code class="docutils literal"><span class="pre">&amp;amp;</span></code>;</li>
+<li>Символ <code class="docutils literal"><span class="pre">&lt;</span></code> заменяется на <code class="docutils literal"><span class="pre">'&amp;lt;</span></code>;</li>
+<li>Символ <code class="docutils literal"><span class="pre">&gt;</span></code> заменяется на <code class="docutils literal"><span class="pre">&amp;gt;</span></code></li>
+<li>Символы <code class="docutils literal"><span class="pre">«»</span></code> заменяются на <code class="docutils literal"><span class="pre">&amp;quot;</span></code></li>
+</ul>
+<p>Также скрипт удаляет все, что идет после закрывающего родительского тега <code class="docutils literal"><span class="pre">&lt;\Файл&gt;</span></code>.</p>
+<div class="section" id="id2">
+<h3>Системные требования<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Для работы скрипта необходимо установить интерпретатор языка программирования Python (<a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>) версии 3 или выше.</p>
+</div>
+<div class="section" id="id3">
+<h3>Авторские права<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Скрипт xml_healer.py распространяется на условиях лицензии <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru">«Attribution-ShareAlike» («Атрибуция — На тех же условиях») 4.0 Всемирная</a>.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2>Порядок работы<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Поместить скрипт <code class="docutils literal"><span class="pre">xml_healer.py</span></code> в папку с XML файлами отчетов;</li>
+<li>Запустить скрипт двойным нажатием и дождаться завершения его работы;</li>
+<li>Ещё раз прогнать исправленный XML файл через <a class="reference external" href="http://www.nalog.ru/rn77/program/all/tester/">Tester</a>.</li>
+</ol>
+<p>После завершения обработки файлов в командной строке будет выведена информация о результате обработки и сообщение «<em>Нажмите Enter</em>». Обработанные файлы будут находиться в папке <code class="docutils literal"><span class="pre">out</span></code>. Оригинальные файлы останутся нетронутыми в текущей директории.</p>
+<div class="section" id="id5">
+<h3>Выводимая информация<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h3>
+<p>В ходе выполнения скрипта выводится несколько типов сообщений:</p>
+<div class="highlight-bash"><div class="highlight"><pre>Имя файла: NO_NDS.9_0000_0000_00000000000000000000_20150427_80c4e37b-a160-4b2f-827c-69226f792dfd.xml
+Исцелен!
+</pre></div>
+</div>
+<p>Сообщение <code class="docutils literal"><span class="pre">Исцелен!</span></code> означает, что файл успешно обработан и его исправленная копия находится в папке <code class="docutils literal"><span class="pre">out</span></code>.</p>
+<div class="highlight-bash"><div class="highlight"><pre>Имя файла: ФАЙЛ.odt
+Не является XML-файлом
+</pre></div>
+</div>
+<p>Сообщение <code class="docutils literal"><span class="pre">Не</span> <span class="pre">является</span> <span class="pre">XML-файлом</span></code> означает, что файл не является файлом отчета. <code class="docutils literal"><span class="pre">xml_healer.py</span></code> сканирует все файлы в папке, в которой находится и обрабатывает только те файлы, в конце которых стоит расширение <code class="docutils literal"><span class="pre">.xml</span></code>.</p>
+<div class="highlight-bash"><div class="highlight"><pre>Имя файла: file.xml
+Файл имеет кодировку отличную от windows-1251
+</pre></div>
+</div>
+<p>Сообщение появляется, если XML файл имеет кодировку отличную от <code class="docutils literal"><span class="pre">windows-1251</span></code>. Возможно, данный XML файл не является файлом отчета, так как файлы отчетов должны иметь кодировку <code class="docutils literal"><span class="pre">windows-1251</span></code>.</p>
+</div>
+<div class="section" id="id6">
+<h3>Рекомендации<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h3>
+<p>После работы скрипта рекомендуется прогнать XML файлы через <a class="reference external" href="http://www.nalog.ru/rn77/program/all/tester/">Tester</a>. При проверке невалидного XML файла Tester, натыкаясь на первый же некорректный символ, прекращает проверку. <code class="docutils literal"><span class="pre">xml_healer.py</span></code> исправляет все некорректные символы и Tester может осуществить полную проверку файла, в ходе которой могут обнаружиться ошибки уже не в структуре файла, а в самом содержимом.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id8">
+<h2>Проверка изменений в файлах<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Чтобы проверить и сравнить изменения в XML файлах, необходимо воспользоваться программой <a class="reference external" href="http://winmerge.org/about/?lang=ru">WinMerge</a>.</p>
+<div class="figure align-center" id="id13">
+<a class="reference internal image-reference" href="_images/xml_healer_screen-007.jpg"><img alt="WinMerge — программа для сравнения текстовых файлов" src="_images/xml_healer_screen-007.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Слева —  исходный файл. Справа — файл после обработки скриптом <code class="docutils literal"><span class="pre">xml_healer.py</span></code></span></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id9">
+<h2>Программное обеспечение<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/mazhartsev/xml_healer.py/archive/master.zip">xml_healer.py</a></li>
+<li><a class="reference external" href="https://www.python.org/downloads/">Python 3</a></li>
+<li><a class="reference external" href="http://www.nalog.ru/rn77/program/all/tester/">Tester</a></li>
+<li><a class="reference external" href="http://winmerge.org/about/?lang=ru">WinMerge</a></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h2>Приложение<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Процесс работы скрипта <code class="docutils literal"><span class="pre">xml_healer.py</span></code> со скриншотами:</p>
+<div class="figure align-center" id="id14">
+<a class="reference internal image-reference" href="_images/xml_healer_screen-004.jpg"><img alt="Шаг 0 — Прогон файла через Tester" src="_images/xml_healer_screen-004.jpg" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Шаг 0 — Прогон файла через Tester</span></p>
+</div>
+<div class="figure align-center" id="id15">
+<a class="reference internal image-reference" href="_images/xml_healer_screen-001.png"><img alt="Шаг 1 — Поместить скрипт с файлами для обработки" src="_images/xml_healer_screen-001.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Шаг 1 — Поместить скрипт с файлами для обработки и дойным нажатием запустить скрипт.</span></p>
+</div>
+<div class="figure align-center" id="id16">
+<a class="reference internal image-reference" href="_images/xml_healer_screen-002.png"><img alt="Шаг 2 — Во время работы скрипта откроется окно командной строки, в котором будет выведен результат обработки файлов." src="_images/xml_healer_screen-002.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Шаг 2 — Во время работы скрипта откроется окно командной строки, в котором будет выведен результат обработки файлов.</span></p>
+</div>
+<div class="figure align-center" id="id17">
+<a class="reference internal image-reference" href="_images/xml_healer_screen-003.png"><img alt="Шаг 3 — Обработанные файлы будут находиться в папке out" src="_images/xml_healer_screen-003.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Шаг 3 — Обработанные файлы будут находиться в папке <code class="docutils literal"><span class="pre">out</span></code>.</span></p>
+</div>
+<div class="figure align-center" id="id18">
+<a class="reference internal image-reference" href="_images/xml_healer_screen-005.jpg"><img alt="Шаг 4 — Повторный прогон исправленного файла через Tester" src="_images/xml_healer_screen-005.jpg" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">Шаг 4 — Повторный прогон исправленного файла через Tester</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bibliography.html" class="btn btn-neutral float-right" title="Список используемых источников" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="xml-experience.html" class="btn btn-neutral" title="III. Практические примеры" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dmitry Mazhartsev.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

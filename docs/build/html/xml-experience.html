@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>III. Практические примеры &mdash; Документация Краткое руководство по XML 1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Документация Краткое руководство по XML 1" href="index.html"/>
+        <link rel="next" title="IV. Скрипт для замены служебных символов в XML" href="xml-healer.html"/>
+        <link rel="prev" title="II. Инструменты для работы с XML" href="tools.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Краткое руководство по XML
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="preface.html#id2">Авторские права</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preface.html#id3">Обратная связь</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-intro.html">I. Коротко об XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id1">Введение в XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id2">Структура XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id3">Правила синтаксиса (Валидность)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#essence">Сущности</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#xml-xpath">Поиск информации в XML файлах (XPath)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id5">Кодировки</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">II. Инструменты для работы с XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#tester">Tester</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#xmlpad">XMLPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#uvfilescorrector">UVFilesCorrector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#xpath-tester">Xpath-Tester</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#notepad">Notepad++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html#geany">Geany</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">III. Практические примеры</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xml">Исправление невалидных XML-файлов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Удаление лишних блоков(абзацев) из XML по заданному условию</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Суть проблемы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Решение проблемы</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-healer.html">IV. Скрипт для замены служебных символов в XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#index-0">Описание</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id2">Системные требования</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id3">Авторские права</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id4">Порядок работы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id5">Выводимая информация</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id6">Рекомендации</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id8">Проверка изменений в файлах</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id9">Программное обеспечение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id12">Приложение</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Список используемых источников</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programs.html">Программное обеспечение</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Краткое руководство по XML</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>III. Практические примеры</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/xml-experience.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="iii">
+<span id="xml-experience"></span><h1>III. Практические примеры<a class="headerlink" href="#iii" title="Ссылка на этот заголовок">¶</a></h1>
+<p>В данной главе приведены некоторые практические приемы работы с XML-файлами.</p>
+<div class="section" id="xml">
+<h2>Исправление невалидных XML-файлов<a class="headerlink" href="#xml" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Если по каким-то причинам между тегами оказывается символ <code class="docutils literal"><span class="pre">&lt;</span></code> или лбой другой управляющий символ (подробнее смотрите <a class="reference internal" href="xml-intro.html#xml-valid"><span>Таблица I.1 — Сущности</span></a>), то при синтаксическом анализе XML-файла возникнет ошибка «Невалидный XML».</p>
+<p>Исправляется данная проблема просто — данные символы необходимо заменить на их сущности (подробнее смотрите раздел <a class="reference internal" href="xml-intro.html#essence"><span>Сущности</span></a>). Сделать это можно, воспользовавшись любым нормальным текстовым редактором с функцией поиска и замены с использованием <em>регулярных выражений</em>.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Подробнее о регулярных выражениях смотрите статью <a class="reference external" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F">Регулярные
+выражения</a>
+и книгу <a class="reference external" href="http://rutracker.org/forum/viewtopic.php?t=3828631">Бен Форта: Освой самостоятельно регулярные выражения. 10
+минут на урок</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Сообщение о невалидности XML-файла может возникать если после закрывающего родительского тега (см. раздел <span class="xref std std-ref">parrent-tag</span>) находится еще какой-либо текст. В данном случае достаточно удалить все, что идет после закрывающего родительского тега.</p>
+</div>
+<p>Также можно воспользоваться скриптом <code class="docutils literal"><span class="pre">xml_healer.py</span></code>, который автоматически заменяет управляющие символы на их сущности и удаляет лишние символы после закрывающего родительского тега. Подробная инструкция по работе со скриптом приведена в главе <a class="reference internal" href="xml-healer.html#xml-healer"><span>IV. Скрипт для замены служебных символов в XML</span></a>.</p>
+</div>
+<div class="section" id="id1">
+<h2>Удаление лишних блоков(абзацев) из XML по заданному условию<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Теги в структуре XML образуют многострочные блоки. Иногда возникает необходимость удалить ряд целых блоков по заданному условию. В качестве примера будет рассмотрена ситуация с отчетом по <abbr title="Налог на добавленную стоимость">НДС</abbr>.</p>
+<p>Для передачи налоговой отчетности по <abbr title="Телекоммуникационные каналы связи">ТКС</abbr> в контролирующие органы используется XML. Весь учет ведется в одних программах (например, в 1С), затем выгружается из них в xml формате и отправляется по ТКС непосредственно в контролирующие органы.</p>
+<p>Из-за несовершенства некоторых программ, периодически возникают проблемы при передаче файлов в контролирующие органы.</p>
+<div class="section" id="id2">
+<h3>Суть проблемы<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Согласно <a class="reference external" href="https://normativ.kontur.ru/document?from=extern&amp;moduleId=1&amp;documentId=244104">приказу ФНС от 29 октября 2014 г. N ММВ-7-3/558&#64;</a> в Книге продаж элемент <code class="docutils literal"><span class="pre">&lt;СвПокуп&gt;</span></code> (Сведения о покупателе, его ИНН/КПП) является необязательным, другими словами он может полностью отсутствовать.</p>
+<p>Отрывок книги продаж выглядит следующим образом:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;КнПродСтр</span> <span class="na">НомерПор=</span><span class="s">&quot;134&quot;</span> <span class="na">НомСчФПрод=</span><span class="s">&quot;11444&quot;</span> <span class="na">ДатаСчФПрод=</span><span class="s">&quot;27.11.2014&quot;</span> <span class="na">СтоимПродСФ=</span><span class="s">&quot;397917.28&quot;</span> <span class="na">СтоимПродСФ0=</span><span class="s">&quot;397917.28&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;КодВидОпер&gt;</span>01<span class="nt">&lt;/КодВидОпер&gt;</span>
+    <span class="nt">&lt;СвПокуп&gt;</span>
+        <span class="nt">&lt;СведЮЛ</span> <span class="na">ИННЮЛ=</span><span class="s">&quot;0190670940&quot;</span> <span class="na">КПП=</span><span class="s">&quot;000000000&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/СвПокуп&gt;</span>
+<span class="nt">&lt;/КнПродСтр&gt;</span>
+<span class="nt">&lt;КнПродСтр</span> <span class="na">НомерПор=</span><span class="s">&quot;135&quot;</span> <span class="na">НомСчФПрод=</span><span class="s">&quot;2332838&quot;</span> <span class="na">ДатаСчФПрод=</span><span class="s">&quot;23.10.2014&quot;</span> <span class="na">СтоимПродСФ=</span><span class="s">&quot;6790000.00&quot;</span> <span class="na">СумНДССФ18=</span><span class="s">&quot;603389.90&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;КодВидОпер&gt;</span>02<span class="nt">&lt;/КодВидОпер&gt;</span>
+    <span class="nt">&lt;СвПокуп&gt;</span>
+        <span class="nt">&lt;СведЮЛ</span> <span class="na">ИННЮЛ=</span><span class="s">&quot;7743596506&quot;</span> <span class="na">КПП=</span><span class="s">&quot;774301001&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/СвПокуп&gt;</span>
+<span class="nt">&lt;/КнПродСтр&gt;</span>
+</pre></div>
+</div>
+<p>А нижеприведенный блок в Книге продаж необязателен:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;СвПокуп&gt;</span>
+        <span class="nt">&lt;СведЮЛ</span> <span class="na">ИННЮЛ=</span><span class="s">&quot;7743596506&quot;</span> <span class="na">КПП=</span><span class="s">&quot;774301001&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/СвПокуп&gt;</span>
+</pre></div>
+</div>
+<p>Если есть сделки с иностранными контрагентами, у которых нет ИНН/КПП, следовательно, сведения о покупателе не заполняются. Но из-за логической ошибки в программе бухгалтерского учета, выгрузка сформированного отчета была невозможна, так как программа ошибочно требовала указать ИНН/КПП для всех контрагентов.</p>
+<p>Чтобы обойти эту ошибку пришлось вместо ИНН указать регистрационный номер контрагента в стране регистрации, а вместо КПП указать девять нулей.</p>
+<p>Но при попытке отравить выгруженный отчет в контролирующий орган, возникала обратная ошибка. Так как ИНН и КПП были фиктивными, то при проверке отчета не выполнялись контрольные соотношения.</p>
+<div class="figure align-center" id="id4">
+<span id="index-0"></span><a class="reference internal image-reference" href="_images/xml-man-tester-001.png"><img alt="Проверка файла отчета программой Tester" src="_images/xml-man-tester-001.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Проверка файла отчета программой Tester</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">ИНН и КПП это не произвольный набор чисел, они содержат определенные контрольные соотношения.</p>
+</div>
+<p>Теперь следовало вручную исправить XML файл отчета и удалить лишние блоки с фиктивными данными.</p>
+</div>
+<div class="section" id="id3">
+<h3>Решение проблемы<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Так как файл содержал свыше 15000 строк и большое количество сделок, надо было автоматизировать данный процесс.</p>
+<p id="index-1">С помощью запроса Xpath и сервиса <a class="reference external" href="http://codebeautify.org/Xpath-Tester">Xpath-Tester</a>  были найдены все сделки с иностранными контрагентами. Запрос имел
+вид <code class="docutils literal"><span class="pre">//СвПокуп[СведЮЛ[&#64;КПП0&quot;000000000&quot;]]</span></code>. Получилось приличное количество сделок, свыше 200.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-man-xpath-002.jpg"><img alt="Запрос Xpath" src="_images/xml-man-xpath-002.jpg" style="width: 400px;" /></a>
+</div>
+<p>Надо было удалить порядка 700 строк, полностью содержащих блоки (причем
+с разными псевдо-ИНН):</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;СвПокуп&gt;</span>
+    <span class="nt">&lt;СведЮЛ</span> <span class="na">ИННЮЛ=</span><span class="s">&quot;0291265150&quot;</span> <span class="na">КПП=</span><span class="s">&quot;000000000&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/СвПокуп&gt;</span>
+</pre></div>
+</div>
+<p>Большинство программ умеет искать и заменять максимум одну строку на
+другую. В данном случае надо было искать и заменять блок текста из трех
+строк.</p>
+<p id="index-2">С этим успешно справилась программа <a class="reference external" href="http://www.uvsoftium.ru/uvFilesCorrector.php">UVFilesCorrector</a>. Интерфейс программы прост до невозможности. В нижней части на вкладке <em>Файлы</em> выбираем нужный нам файл.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-man-uv-003a.jpg"><img alt="" src="_images/xml-man-uv-003a.jpg" style="width: 400px;" /></a>
+</div>
+<p>В верхнем поле <em>Список замен</em> необходимо нажать на пустое поле и создаем правило для замены. В данном случае оно выглядело так:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-man-uv-005.jpg"><img alt="" src="_images/xml-man-uv-005.jpg" style="width: 400px;" /></a>
+</div>
+<p>На скриншоте видно не все выражение, в поле <em>Что найти:</em> в режиме
+<em>Шаблон (регулярное выражение)</em> введено:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;СвПокуп&gt;</span>\r\n
+    <span class="nt">&lt;СведЮЛ</span> <span class="na">ИННЮЛ=</span><span class="s">&quot;..........&quot;</span> <span class="na">КПП=</span><span class="s">&quot;000000000&quot;</span><span class="nt">/&gt;</span>\r\n
+ <span class="nt">&lt;/СвПокуп&gt;</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Подробнее о регулярных выражениях смотрите статью <a class="reference external" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F">Регулярные
+выражения</a>
+и книгу <a class="reference external" href="http://rutracker.org/forum/viewtopic.php?t=3828631">Бен Форта: Освой самостоятельно регулярные выражения. 10
+минут на урок</a></p>
+</div>
+<p>Десять точек в <code class="docutils literal"><span class="pre">ИННЮЛ=&quot;..........&quot;</span></code> являются <em>регулярным выражением</em>  и означают, что на их месте может стоять любой символ. В итоге получилось, что под замену попадали все блоки, имеющие нулевые КПП. Комбинация символов <code class="docutils literal"><span class="pre">\r\n</span></code> также является регулярным выражением и означает перенос строки.</p>
+<p>Всего у организации было 14 контрагентов, с которыми в общей сумме было
+заключено 266 сделок. Следовательно, после нажатия на кнопку <em>Заменить</em>
+получилось 266 замены.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-man-uv-007.jpg"><img alt="" src="_images/xml-man-uv-007.jpg" style="width: 300px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-man-uv-006.jpg"><img alt="" src="_images/xml-man-uv-006.jpg" style="width: 400px;" /></a>
+</div>
+<p>Буквально за один простой шаг по заданному условию было удалено свыше
+700 строк. Проверка Tester’ом  ошибок не выявила и файл был успешно отправлен в контролирующий орган.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="xml-healer.html" class="btn btn-neutral float-right" title="IV. Скрипт для замены служебных символов в XML" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tools.html" class="btn btn-neutral" title="II. Инструменты для работы с XML" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dmitry Mazhartsev.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

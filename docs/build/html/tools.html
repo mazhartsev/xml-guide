@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>II. Инструменты для работы с XML &mdash; Документация Краткое руководство по XML 1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Документация Краткое руководство по XML 1" href="index.html"/>
+        <link rel="next" title="III. Практические примеры" href="xml-experience.html"/>
+        <link rel="prev" title="I. Коротко об XML" href="xml-intro.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Краткое руководство по XML
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="preface.html#id2">Авторские права</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preface.html#id3">Обратная связь</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-intro.html">I. Коротко об XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id1">Введение в XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id2">Структура XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id3">Правила синтаксиса (Валидность)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#essence">Сущности</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#xml-xpath">Поиск информации в XML файлах (XPath)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-intro.html#id5">Кодировки</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">II. Инструменты для работы с XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tester">Tester</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xmlpad">XMLPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uvfilescorrector">UVFilesCorrector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xpath-tester">Xpath-Tester</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notepad">Notepad++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geany">Geany</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-experience.html">III. Практические примеры</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-experience.html#xml">Исправление невалидных XML-файлов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-experience.html#id1">Удаление лишних блоков(абзацев) из XML по заданному условию</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xml-experience.html#id2">Суть проблемы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml-experience.html#id3">Решение проблемы</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml-healer.html">IV. Скрипт для замены служебных символов в XML</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#index-0">Описание</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id2">Системные требования</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id3">Авторские права</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id4">Порядок работы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id5">Выводимая информация</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xml-healer.html#id6">Рекомендации</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id8">Проверка изменений в файлах</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id9">Программное обеспечение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml-healer.html#id12">Приложение</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Список используемых источников</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programs.html">Программное обеспечение</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Краткое руководство по XML</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>II. Инструменты для работы с XML</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/tools.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="ii-xml">
+<span id="tools"></span><h1>II. Инструменты для работы с XML<a class="headerlink" href="#ii-xml" title="Ссылка на этот заголовок">¶</a></h1>
+<p>XML-документы представляют собой обыкновенные текстовые файлы. Для
+работы с ними достаточно любого простейшего текстового редактора. Однако
+существуют специальные инструменты для работы с XML.</p>
+<p>Все приведенные ниже программы являются бесплатными, их можно скачать с
+официальных сайтов.</p>
+<div class="section" id="tester">
+<h2>Tester<a class="headerlink" href="#tester" title="Ссылка на этот заголовок">¶</a></h2>
+<p id="index-0"><a class="reference external" href="http://www.nalog.ru/rn77/program/all/tester/">Tester</a> — Программа,
+разработанная ФНС для проверки файлов на соответствие форматам
+представления в электронном виде налоговых деклараций, бухгалтерской
+отчетности.</p>
+</div>
+<div class="section" id="xmlpad">
+<h2>XMLPad<a class="headerlink" href="#xmlpad" title="Ссылка на этот заголовок">¶</a></h2>
+<p id="index-1"><a class="reference external" href="http://xmlpad-mobile.com/">XMLPad</a> — многофункциональный
+специализированный XML редактор.</p>
+<p>XMLPad обладает богатым функционалом, поддерживает XPath, возможность
+удалять целые блоки тегов, смену кодировок, проверку валидности и т.д.</p>
+</div>
+<div class="section" id="uvfilescorrector">
+<h2>UVFilesCorrector<a class="headerlink" href="#uvfilescorrector" title="Ссылка на этот заголовок">¶</a></h2>
+<p id="index-2"><a class="reference external" href="http://www.uvsoftium.ru/uvFilesCorrector.php">UVFilesCorrector</a> —
+программа для быстрого исправления текстовых файлов, текста в буфере
+обмена и просто выделенного текста. Позволяет искать и заменять целые
+блоки текста.</p>
+</div>
+<div class="section" id="xpath-tester">
+<h2>Xpath-Tester<a class="headerlink" href="#xpath-tester" title="Ссылка на этот заголовок">¶</a></h2>
+<p id="index-3"><a class="reference external" href="http://codebeautify.org/Xpath-Tester">Xpath-Tester</a> — сайт для
+тестирования запросов XPath.</p>
+</div>
+<div class="section" id="notepad">
+<h2>Notepad++<a class="headerlink" href="#notepad" title="Ссылка на этот заголовок">¶</a></h2>
+<p id="index-4"><a class="reference external" href="http://notepad-plus-plus.org/download/">Notepad++</a> — мощный
+текстовый редактор с функцией нумерации строк и выбора кодировки.</p>
+</div>
+<div class="section" id="geany">
+<h2>Geany<a class="headerlink" href="#geany" title="Ссылка на этот заголовок">¶</a></h2>
+<p id="index-5"><a class="reference external" href="http://www.geany.org/">Geany</a> — cвободная среда разработки
+программного обеспечения, написанная с использованием библиотеки GTK2.
+Поддерживает смену кодировок, нумерацию строк и т.д.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="xml-experience.html" class="btn btn-neutral float-right" title="III. Практические примеры" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="xml-intro.html" class="btn btn-neutral" title="I. Коротко об XML" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dmitry Mazhartsev.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
