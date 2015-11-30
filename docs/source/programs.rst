@@ -10,3 +10,4 @@
 #. `XMLPad <http://xmlpad-mobile.com/>`__
 #. `Tester <http://www.nalog.ru/rn77/program/all/tester/>`__
 #. `UVFilesCorrector <http://www.uvsoftium.ru/uvFilesCorrector.php>`__
+#. `WinMerge <http://winmerge.org/?lang=ru>`__
