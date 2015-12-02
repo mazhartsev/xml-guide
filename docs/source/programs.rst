@@ -11,3 +11,4 @@
 #. `Tester <http://www.nalog.ru/rn77/program/all/tester/>`__
 #. `UVFilesCorrector <http://www.uvsoftium.ru/uvFilesCorrector.php>`__
 #. `WinMerge <http://winmerge.org/?lang=ru>`__
+#. `MS Visual Studio <https://www.visualstudio.com/ru-ru/products/visual-studio-community-vs>`__

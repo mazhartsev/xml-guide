@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>V. Проверка XML-файла по XSD-схеме &mdash; Документация Краткое руководство по XML 01.12.2015 v2</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Документация Краткое руководство по XML 01.12.2015 v2" href="index.html"/>
+        <link rel="next" title="Список используемых источников" href="bibliography.html"/>
+        <link rel="prev" title="IV. Скрипт для замены служебных символов в XML" href="xml-healer.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Краткое руководство по XML
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                01.12.2015 v2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xml-intro.html">I. Коротко об XML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">II. Инструменты для работы с XML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xml-experience.html">III. Практические примеры</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xml-healer.html">IV. Скрипт для замены служебных символов в XML</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">V. Проверка XML-файла по XSD-схеме</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xsd-xmlpad">Проверка по XSD-схеме в XMLPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xsd-ms-visual-studio">Проверка по XSD-схеме в MS Visual Studio</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Список используемых источников</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programs.html">Программное обеспечение</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Краткое руководство по XML</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>V. Проверка XML-файла по XSD-схеме</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/xsd.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="v-xml-xsd">
+<span id="xsd"></span><h1>V. Проверка XML-файла по XSD-схеме<a class="headerlink" href="#v-xml-xsd" title="Ссылка на этот заголовок">¶</a></h1>
+<p>В данном разделе описаны способы проверки  XML-файла по XSD-схеме. Сделать это можно разными способами, существует много программ  для этих целей. По XSD-схеме, например, проверяет программа <a class="reference external" href="http://www.nalog.ru/rn77/program/all/tester/">Tester</a>, но она только показывает ошибки и не дает их исправить. Для большего удобства лучше использовать специализированные редакторы такие, как XMLPad или MS Visual Studio.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Проверять файл по XSD-схеме целесообрано в исключительных случаях, например, если скрипт <code class="docutils literal"><span class="pre">xml-healer.py</span></code> не справился с исправлением файла. Подробнее в главе <a class="reference internal" href="xml-healer.html#xml-healer"><span>IV. Скрипт для замены служебных символов в XML</span></a>.</p>
+</div>
+<p><strong>MS Visual Studio</strong> является спецаилизированным инструментом для программистов, обладающим огромным функционалом. Работа с XML и автоматическая проверка по XSD &#8211; лишь одна из множества функций среды разработки. MS Visual Studio 15 можно скачать бесплатно с официального сайта: <a class="reference external" href="https://www.visualstudio.com/ru-ru/products/visual-studio-community-vs">https://www.visualstudio.com/ru-ru/products/visual-studio-community-vs</a>.</p>
+<p><strong>XMLPad</strong> — многофункциональный специализированный XML редактор. XMLPad обладает богатым функционалом, поддерживает XPath, возможность удалять целые блоки тегов, смену кодировок, проверку валидности и т.д. XMLPad доступен для бесплатного использования на сайте: <a class="reference external" href="http://xmlpad-mobile.com">http://xmlpad-mobile.com</a>.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">XMLPad уступает по удобству и возможностям MS Visual Studio, но если вы не являетесь программистом и у вас не установлена MS Visual Studio, лучше воспользоваться XMLPad.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Перед проверкой файлов необходимо предварительно скачать файлы XSD-схем. Скачать XSD-схемы можно с официальных сайтов контролирующих органов. В качестве примера взята декларация по НДС, скачать XSD-схему для нее можно с сайта <a class="reference external" href="http://format.nalog.ru/">Справочник налоговой и бухгалтерской отчетности</a>.</p>
+</div>
+<div class="section" id="xsd-xmlpad">
+<h2>Проверка по XSD-схеме в XMLPad<a class="headerlink" href="#xsd-xmlpad" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Откройте XML-файл, который требуется проверить в XMLPad <em>File &gt; Open</em>.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-validate-001.png"><img alt="" src="_images/xml-validate-001.png" style="width: 400px;" /></a>
+</div>
+<ol class="arabic simple" start="2">
+<li>Чтобы проверить файл по заданной XSD-схеме, его надо с ней ассоциировать. Перейдите в меню <em>XML &gt; Assign Schema/DTD</em>.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-validate-002a.png"><img alt="" src="_images/xml-validate-002a.png" style="width: 400px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li>Выберите <em>W3C Schema</em> и нажмите <em>Browse</em>, затем выберите XSD-схему для проверки.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-validate-003.png"><img alt="" src="_images/xml-validate-003.png" style="width: 250px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-validate-004.png"><img alt="" src="_images/xml-validate-004.png" style="width: 250px;" /></a>
+</div>
+<ol class="arabic simple" start="4">
+<li>После того, как XSD-схема ассоциирована, нажмите <code class="docutils literal"><span class="pre">F7</span></code> или <em>XML &gt; Validate</em>, чтобы проверить файл. В нижней части окна будут выведены ошибки, нажав на которые можно подсветить строку, в которой они находятся.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/xml-validate-005.png"><img alt="" src="_images/xml-validate-005.png" style="width: 400px;" /></a>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Для удобства отображения можно включить переносы строк <em>Edit &gt; Word Wrap</em>.</p>
+</div>
+</div>
+<div class="section" id="xsd-ms-visual-studio">
+<h2>Проверка по XSD-схеме в MS Visual Studio<a class="headerlink" href="#xsd-ms-visual-studio" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Откройте XML-файл, который требуется проверить в MS Visual Studio <em>Файл &gt; Открыть &gt; Файл</em>.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/ms-vstudio-001.png"><img alt="" src="_images/ms-vstudio-001.png" style="width: 400px;" /></a>
+</div>
+<ol class="arabic simple" start="2">
+<li>Чтобы проверить файл по заданной XSD-схеме, его надо с ней ассоциировать. Перейдите в меню <em>XML-код &gt; Схемы...</em>.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/ms-vstudio-002.png"><img alt="" src="_images/ms-vstudio-002.png" style="width: 300px;" /></a>
+</div>
+<ol class="arabic simple" start="3">
+<li>Нажмите <em>Добавить</em> и выберите файл XSD-схемы.</li>
+</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/ms-vstudio-003.png"><img alt="" src="_images/ms-vstudio-003.png" style="width: 300px;" /></a>
+</div>
+<p>Проверка на соответсвие XSD-схеме будет осуществляться автоматически на лету. Внизу в окне <em>Списка ошибок</em> будет отображаться список ошибок. При нажатии на ошибку, она будет подсвечена в редакторе.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Добавить окно <em>Списка ошибок</em> можно через <em>Вид &gt; Списка ошибок</em>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bibliography.html" class="btn btn-neutral float-right" title="Список используемых источников" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="xml-healer.html" class="btn btn-neutral" title="IV. Скрипт для замены служебных символов в XML" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dmitry Mazhartsev.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'01.12.2015 v2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
