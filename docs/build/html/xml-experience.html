@@ -82,7 +82,7 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие ко 2-му изданию</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xml-intro.html">I. Коротко об XML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">II. Инструменты для работы с XML</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">III. Практические примеры</a><ul>
@@ -92,6 +92,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id3">Решение проблемы</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Работа с файлами отчетов Росстата</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="xml-healer.html">IV. Скрипт для замены служебных символов в XML</a></li>
@@ -194,7 +195,7 @@
 <p>Если есть сделки с иностранными контрагентами, у которых нет ИНН/КПП, следовательно, сведения о покупателе не заполняются. Но из-за логической ошибки в программе бухгалтерского учета, выгрузка сформированного отчета была невозможна, так как программа ошибочно требовала указать ИНН/КПП для всех контрагентов.</p>
 <p>Чтобы обойти эту ошибку пришлось вместо ИНН указать регистрационный номер контрагента в стране регистрации, а вместо КПП указать девять нулей.</p>
 <p>Но при попытке отравить выгруженный отчет в контролирующий орган, возникала обратная ошибка. Так как ИНН и КПП были фиктивными, то при проверке отчета не выполнялись контрольные соотношения.</p>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id5">
 <span id="index-0"></span><a class="reference internal image-reference" href="_images/xml-man-tester-001.png"><img alt="Проверка файла отчета программой Tester" src="_images/xml-man-tester-001.png" style="width: 400px;" /></a>
 <p class="caption"><span class="caption-text">Проверка файла отчета программой Tester</span></p>
 </div>
@@ -256,6 +257,57 @@
 </div>
 <p>Буквально за один простой шаг по заданному условию было удалено свыше
 700 строк. Проверка Tester’ом  ошибок не выявила и файл был успешно отправлен в контролирующий орган.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2>Работа с файлами отчетов Росстата<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Файлы отчетов Росстата формируются в одну строку, что создает определенные сложности при просмотре в обычных тектовых редакторах.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/togs-001.png"><img alt="" src="_images/togs-001.png" style="width: 400px;" /></a>
+</div>
+<p>В отличии, например, от файлов отчетов ФНС.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/fns-001.png"><img alt="" src="_images/fns-001.png" style="width: 400px;" /></a>
+</div>
+<p>С файлами Росстата лучше работать с помощью программы <a class="reference external" href="http://xmlpad-mobile.com/">XMLPad</a>.</p>
+<p><strong>XMLPad имеет несколько режимов отображения:</strong></p>
+<ol class="arabic simple">
+<li>Стандартный режим (Source) отображения и редактирования кода.</li>
+</ol>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/togs-002.png"><img alt="" src="_images/togs-002.png" style="width: 400px;" /></a>
+</div>
+<p>В левой панели отображается структура XML-файла. Значения элементов можно отреактировать напрямую, либо через левую нижнюю панель.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Режим отображения сеткой (Grid).</li>
+</ol>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/togs-003.png"><img alt="" src="_images/togs-003.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Табличный вид (Table View).</li>
+</ol>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/togs-004.png"><img alt="" src="_images/togs-004.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Режим предпросмотра (Preview).</li>
+</ol>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="_images/togs-005.png"><img alt="" src="_images/togs-005.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Также XMLPad позволяет проверить XML-файл по XSD-схеме, подробнее в разделе <a class="reference internal" href="xsd.html#xsd"><span>V. Проверка XML-файла по XSD-схеме</span></a>.</p>
 </div>
 </div>
 </div>
